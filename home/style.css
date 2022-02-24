@@ -1,0 +1,131 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body
+{
+    background-color: #032302;
+    padding: 5vh 5vh;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* nav */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-nav
+{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.list-nav a
+{
+    margin: 1vh;
+    padding: 2vh 3vh;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.list-nav a:hover
+{
+    background-color: white;    
+    color: #032302;
+    transition: 0.5s;
+}
+
+.search
+{
+    display: flex;
+    width: 40%;
+}
+
+i
+{
+    color: pink;
+}
+
+.search_input
+{
+    margin: auto 5vh auto 5vh;
+    color: black;
+    padding: 2vh;
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+/* card */
+.content_card
+{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    width: 30%;
+    height: auto;
+    margin: 3vh;
+}
+
+.card_img img
+{
+    width: 50vh;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+.card_img img:hover
+{
+    filter: grayscale(70%);
+    transition: 0.5;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    img
+    {
+        width: 30%;
+    }
+    .content_card
+    {
+        text-align: center;
+    }
+    .card
+    {
+        width: 80%;
+    }
+    .search
+    {
+        width: 80%;
+    }
+    .search_input
+    {
+        width: 100%;
+    }
+}
